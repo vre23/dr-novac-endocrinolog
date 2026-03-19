@@ -169,6 +169,30 @@
     .cd .value{font-size:0.9rem;font-weight:600}
     .cd .value a{color:var(--violet-light);text-decoration:none}
 
+    /* ── Research / Publications ── */
+    .research{background:var(--white)}
+    .research-intro{text-align:center;margin-bottom:2.5rem}
+    .research-intro .stats-row{display:flex;justify-content:center;gap:2rem;margin-top:1.5rem;flex-wrap:wrap}
+    .r-stat{text-align:center}
+    .r-stat-num{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--violet);line-height:1}
+    .r-stat-label{font-size:0.7rem;color:var(--text-light);margin-top:0.2rem;font-weight:500}
+    .timeline{position:relative;max-width:800px;margin:0 auto}
+    .timeline::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--violet),var(--violet-light),var(--lavender))}
+    .tl-year{position:relative;padding-left:52px;margin-bottom:1.8rem}
+    .tl-year .year-badge{position:absolute;left:6px;top:0;width:30px;height:30px;background:var(--violet);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.6rem;font-weight:800;z-index:1}
+    .tl-year h3{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--plum);margin-bottom:0.5rem}
+    .tl-item{background:var(--cream);border:1px solid rgba(124,58,237,0.04);border-radius:8px;padding:0.8rem 1rem;margin-bottom:0.4rem;transition:all 0.3s;font-size:0.82rem;line-height:1.5}
+    .tl-item:hover{border-color:rgba(124,58,237,0.15);box-shadow:var(--shadow-soft);transform:translateX(4px)}
+    .tl-item .tl-loc{font-size:0.68rem;font-weight:700;color:var(--violet);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:0.15rem}
+    .tl-item .tl-title{color:var(--plum);font-weight:600;font-style:italic}
+    .tl-item .tl-type{display:inline-block;font-size:0.6rem;font-weight:700;background:var(--lavender);color:var(--violet);padding:0.1rem 0.4rem;border-radius:3px;margin-left:0.3rem;text-transform:uppercase;letter-spacing:0.04em;vertical-align:middle}
+    .studies-section{margin-top:2.5rem;max-width:800px;margin-left:auto;margin-right:auto}
+    .studies-section h3{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--plum);margin-bottom:1rem;text-align:center}
+    .study-card{display:flex;align-items:start;gap:1rem;background:var(--violet-pale);border:1px solid rgba(124,58,237,0.08);border-radius:10px;padding:1rem 1.2rem;margin-bottom:0.5rem}
+    .study-card .study-years{font-family:var(--font-display);font-size:0.9rem;font-weight:700;color:var(--violet);min-width:75px;flex-shrink:0}
+    .study-card .study-title{font-size:0.82rem;color:var(--plum);font-weight:600}
+    .study-card .study-loc{font-size:0.7rem;color:var(--text-light);margin-top:0.1rem}
+
     /* ── Booking form ── */
     .booking-form{background:rgba(255,255,255,0.03);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:2rem}
     .booking-form h3{font-family:var(--font-display);font-size:1.3rem;font-weight:700;margin-bottom:0.3rem}
@@ -264,6 +288,7 @@
     <a href="#servicii">Servicii</a>
     <a href="#despre">Despre</a>
     <a href="#locatii">Locatii</a>
+    <a href="#cercetare">Cercetare</a>
     <a href="#programare" class="btn-prog">Programare</a>
   </nav>
   <button class="menu-toggle" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Meniu"><span></span><span></span><span></span></button>
@@ -401,6 +426,170 @@
       <a href="tel:0372748453" class="loc-phone">0372 748 453 int.133</a>
     </div>
   </div>
+</div></section>
+
+<!-- Research -->
+<section class="research" id="cercetare"><div class="container">
+  <div class="section-title anim"><span class="overline">Activitate stiintifica</span><h2>Cercetare si publicatii</h2><p>Participari la congrese internationale si nationale de endocrinologie, cu lucrari stiintifice si postere prezentate in toata Europa.</p></div>
+
+  <div class="research-intro anim">
+    <div class="stats-row">
+      <div class="r-stat"><div class="r-stat-num">14+</div><div class="r-stat-label">Lucrari internationale</div></div>
+      <div class="r-stat"><div class="r-stat-num">11+</div><div class="r-stat-label">Lucrari nationale</div></div>
+      <div class="r-stat"><div class="r-stat-num">4</div><div class="r-stat-label">Studii clinice</div></div>
+      <div class="r-stat"><div class="r-stat-num">9</div><div class="r-stat-label">Tari vizitate</div></div>
+    </div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="tl-year anim">
+      <div class="year-badge">18</div>
+      <h3>2018</h3>
+      <div class="tl-item">
+        <div class="tl-loc">Minsk, Belarus — 21st ESE Postgraduate Course</div>
+        <span class="tl-title">"Brown tumor of the palate as first manifestation of primary hyperparathyroidism"</span> <span class="tl-type">Lucrare</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Sibiu, Romania — Congresul National de Endocrinologie</div>
+        Participant
+      </div>
+    </div>
+
+    <div class="tl-year anim">
+      <div class="year-badge">17</div>
+      <h3>2017</h3>
+      <div class="tl-item">
+        <div class="tl-loc">Napoli, Italia — ENDOCONNECT 2017</div>
+        <span class="tl-title">"Effect of levothyroxine treatment in subclinical hypothyroidism women with infertility"</span> <span class="tl-type">Lucrare</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Roma, Italia — Congres International Infertilitate</div>
+        Lucrare prezentata <span class="tl-type">Prezentare</span>
+      </div>
+    </div>
+
+    <div class="tl-year anim">
+      <div class="year-badge">16</div>
+      <h3>2016</h3>
+      <div class="tl-item">
+        <div class="tl-loc">Wroclaw, Polonia — 19th Postgraduate Course</div>
+        <span class="tl-title">"Kidney failure due to primary hyperparathyroidism – a rare case of late diagnosis"</span> <span class="tl-type">Lucrare</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Opatija, Croatia — 18th Postgraduate Course</div>
+        <span class="tl-title">"Basedow disease and membranous glomerulonephritis – an unfortunate association in a young 16 years old girl"</span> <span class="tl-type">Lucrare</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Bled, Slovenia — ENDOCONNECT 2016</div>
+        Lucrare prezentata <span class="tl-type">Prezentare</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Brasov, Romania — Congresul Comun Psihoneuroendocrinologie + Endocrinologie</div>
+        2 lucrari prezentate <span class="tl-type">Prezentari</span>
+      </div>
+    </div>
+
+    <div class="tl-year anim">
+      <div class="year-badge">14</div>
+      <h3>2014 &ndash; 2015</h3>
+      <div class="tl-item">
+        <div class="tl-loc">Goteborg, Suedia — Curs Postgraduate ESE</div>
+        Lucrare prezentata <span class="tl-type">Prezentare</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Romania — XXII Congresul Societatii Romane de Endocrinologie</div>
+        2 lucrari prezentate <span class="tl-type">Prezentari</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Romania — Simpozion „Dezbateri si Controverse in Osteoporoza"</div>
+        Lucrare prezentata <span class="tl-type">Prezentare</span>
+      </div>
+    </div>
+
+    <div class="tl-year anim">
+      <div class="year-badge">13</div>
+      <h3>2013</h3>
+      <div class="tl-item">
+        <div class="tl-loc">Florenta, Italia — European Congress of Endocrinology</div>
+        <span class="tl-title">"A clinical case of complicated hyperparathyroidism with diagnosis delay due to vitamin D deficiency"</span> <span class="tl-type">Poster</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Florenta, Italia — European Congress of Endocrinology</div>
+        <span class="tl-title">"Lean body mass and leptine, but not fat mass are independent predictors of bone mass in postmenopausal women"</span> <span class="tl-type">Poster</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Florenta, Italia — European Congress of Endocrinology</div>
+        <span class="tl-title">"Antagonism between body weight and adipocytokines on bone mass acquisition in pre- and postmenopausal women"</span> <span class="tl-type">Poster</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Romania — Congresul National de Psihoneuroendocrinologie</div>
+        Speaker: <span class="tl-title">"Hiperparatiroidismul — boala cu 1000 de fete"</span> <span class="tl-type">Speaker</span>
+      </div>
+    </div>
+
+    <div class="tl-year anim">
+      <div class="year-badge">11</div>
+      <h3>2011</h3>
+      <div class="tl-item">
+        <div class="tl-loc">Copenhaga, Danemarca — European Congress of Endocrinology</div>
+        <span class="tl-title">"Antagonism between body weight and adipocytokines on bone mass acquisition in pre- and postmenopausal women"</span> <span class="tl-type">Poster</span>
+      </div>
+    </div>
+
+    <div class="tl-year anim">
+      <div class="year-badge">10</div>
+      <h3>2010</h3>
+      <div class="tl-item">
+        <div class="tl-loc">Praga, Cehia — International Congress of Endocrinology</div>
+        <span class="tl-title">"Isolated parietal-skull metastasis from a thyroid papillary carcinoma"</span> <span class="tl-type">Poster</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Praga, Cehia — International Congress of Endocrinology</div>
+        <span class="tl-title">"Two rare genetic causes of aberrant growth: Robinow syndrome with partial GH deficiency and dwarfism and Simpson-Golabi-Behmel syndrome with gigantism"</span> <span class="tl-type">Poster</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Romania — Congresul National de Endocrinologie</div>
+        Prezentare orala (coautor cu Prof. Dr. Branișteanu) <span class="tl-type">Oral</span>
+      </div>
+    </div>
+
+    <div class="tl-year anim">
+      <div class="year-badge">09</div>
+      <h3>2009</h3>
+      <div class="tl-item">
+        <div class="tl-loc">Iasi, Romania</div>
+        <span class="tl-title">"Obezitatea — mai mult decat un factor de risc"</span> <span class="tl-type">Prezentare</span>
+      </div>
+      <div class="tl-item">
+        <div class="tl-loc">Bucuresti — Congresul IV National Psihoneuroendocrinologie</div>
+        Participant
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Clinical Studies -->
+  <div class="studies-section anim">
+    <h3>Studii clinice</h3>
+    <div class="study-card">
+      <div class="study-years">2017 &ndash; prezent</div>
+      <div><div class="study-title">Rolul DPP-4 si Cathepsinei K in evolutia si tratamentul osteoporozei la femeile postmenopauza non-diabetice</div></div>
+    </div>
+    <div class="study-card">
+      <div class="study-years">2015</div>
+      <div><div class="study-title">Efectul tratamentului PCOS asupra fertilitatii feminine</div><div class="study-loc">SMU Moinesti</div></div>
+    </div>
+    <div class="study-card">
+      <div class="study-years">2011 &ndash; 2013</div>
+      <div><div class="study-title">Studiul COMPLIA</div></div>
+    </div>
+    <div class="study-card">
+      <div class="study-years">2009 &ndash; 2011</div>
+      <div><div class="study-title">Corelatia intre nivelul leptinei si compozitia masei corporale</div><div class="study-loc">Departamentul de Endocrinologie, Iasi</div></div>
+    </div>
+  </div>
+
 </div></section>
 
 <!-- Booking -->
